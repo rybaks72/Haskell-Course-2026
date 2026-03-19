@@ -246,13 +246,40 @@ meanVar xs = (mu, var)
 
 main :: IO ()
 main = do
---   print (primesTo 30)
---   print (isPrime 29)
---   print (isPrime 28)
+    print (primesTo 30)
+    print (isPrime 29)
+    print (isPrime 28)
 
---   print (goldbachPairs 4)
---   print (goldbachPairs 10)
+    print (goldbachPairs 4)
+    print (goldbachPairs 10)
+    print (goldbachPairs 28)
 
---   print (coprimePairs [2, 3, 4, 6, 7])
-  print (matMul [] [])
-  print (permutations 2 [1,2,3])
+    print (coprimePairs [2,3,4,6,7])
+
+    let a = [[1,2,3],[4,5,6]]
+    let b = [[7,8],[9,10],[11,12]]
+    print (matMul a b)
+    print (matMul [] [])
+    print (matMul [[1,2]] [[1,2,3]])
+
+    print (permutations 2 [1,2,3])
+    print (permutations 0 [1,2,3])
+    print (permutations 3 [1,2])
+
+    print (merge [1,3,5] [1,2,5,6])
+    print (take 20 hamming)
+
+    print (power 2 0)
+    print (power 2 10)
+    print (power 3 4)
+
+    print (listMaxSeq  [3,1,9,2,7])
+    print (listMaxBang [3,1,9,2,7])
+
+    print (take 10 primes)
+    print (isPrimeInf 29)
+    print (isPrimeInf 28)
+
+    print (meanA [1,2,3,4])
+    print (meanB [1,2,3,4])
+    print (meanVar [1,2,3,4])
